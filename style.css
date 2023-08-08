@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+}
+.nav-ul{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    right: 200px;
+    top: 5px;
+}
+.brand{
+    position: relative;
+    top: 10px;
+    right: 70px;
+}
+.lock{
+    overflow: hidden;
+}
+.nav-btns{
+    position: relative;
+    top: 5px;
+}
+.nav-btns button:nth-child(1){
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.nav-btns button:nth-child(2){
+    outline: none;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: transparent;
+}
+a{
+    text-decoration: none;
+    color: black;
+    display: inline;
+    margin: 10px;
+}
+.ham{
+    display: none;
+}
+.overlay{
+    display: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1{
+    font-size: 70px;
+    width: 500px;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    grid-gap: 80px;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.img-container img{
+    width: 80%;
+}
+
+.logos{
+    margin-top: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   
+}
+.hero button{
+    margin-top: 40px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all 1s;
+}
+.hero button:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    color: hsl(0, 0%, 41%);
+    font-family: bold;
+    cursor: pointer;
+    transition: all 1s;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 120px;
+    z-index: 2;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    
+}
+.dropdown-content a{
+    position: relative;
+    right: 10px;
+    gap: 10px;
+    color: black;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+}
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+
+}
